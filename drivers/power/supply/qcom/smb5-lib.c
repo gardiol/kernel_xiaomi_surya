@@ -6135,9 +6135,9 @@ static void smblib_cc_un_compliant_charge_work(struct work_struct *work)
 			&& (chg->typec_mode == POWER_SUPPLY_TYPEC_NONE ||
 				chg->typec_mode == POWER_SUPPLY_TYPEC_NON_COMPLIANT)
 			&& (chg->cc_un_compliant_detected == false)) {
-		vote( chg->usb_icl_votable, CC_UN_COMPLIANT_VOTER, true, 500000);
-		vote( chg->fcc_votable, CC_UN_COMPLIANT_VOTER, true, 500000);
-		pr_err("CC uncompliant, set icl = 500mA\n");
+		vote( chg->usb_icl_votable, CC_UN_COMPLIANT_VOTER, true, 900000);
+		vote( chg->fcc_votable, CC_UN_COMPLIANT_VOTER, true, 900000);
+		pr_err("CC uncompliant, set icl = 900mA\n");
 		chg->cc_un_compliant_detected = true;
 		//smblib_apsd_enable(chg, true);
 		smblib_hvdcp_detect_enable(chg, true);

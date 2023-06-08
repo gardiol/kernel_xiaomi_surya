@@ -3,6 +3,10 @@ ifeq ($(CONFIG_BUILD_ARM64_DT_OVERLAY),y)
 dtbo-$(CONFIG_MACH_XIAOMI_COURBET) += courbet-sdmmagpie-overlay.dtbo
 courbet-sdmmagpie-overlay.dtbo-base := xiaomi-sdmmagpie.dtb
 
+dtbo-$(CONFIG_MACH_XIAOMI_SURYA) += surya-sdmmagpie-idp-overlay.dtbo
+
+surya-sdmmagpie-idp-overlay.dtbo-base := xiaomi-sdmmagpie.dtb
+
 dtbo-$(CONFIG_MACH_XIAOMI_DAVINCI) += \
 	davinci-sdmmagpie-overlay.dtbo \
 	davinci_m0a-sdmmagpie-overlay.dtbo \

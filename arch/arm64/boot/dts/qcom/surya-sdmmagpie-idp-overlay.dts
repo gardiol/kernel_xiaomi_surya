@@ -16,13 +16,13 @@
 #include <dt-bindings/interrupt-controller/arm-gic.h>
 #include <dt-bindings/clock/qcom,camcc-sdmmagpie.h>
 
-#include "surya-sdmmagpie-idp.dtsi"
-#include "sdmmagpie-audio-overlay.dtsi"
-#include "haptic.dtsi"
-#include "touchscreen.dtsi"
+#include "xiaomi/surya/surya-audio-overlay.dtsi"
+#include "xiaomi/surya/surya-haptic-overlay.dtsi"
+#include "xiaomi/surya/surya-touchscreen-overlay.dtsi"
+#include "xiaomi/surya/surya-sdmmagpie-idp.dtsi"
 
 / {
-	model = "IDP";
+	model = "SURYA";
 	compatible = "qcom,sdmmagpie-idp", "qcom,sdmmagpie", "qcom,idp";
 	qcom,msm-id = <365 0x0>;
 	qcom,board-id = <34 0>;

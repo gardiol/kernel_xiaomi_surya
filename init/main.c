@@ -538,7 +538,7 @@ static void __init mm_init(void)
 	pti_init();
 }
 
-#ifdef CONFIG_MACH_XIAOMI_VIOLET
+#if defined(CONFIG_MACH_XIAOMI_VIOLET) || defined(CONFIG_MACH_XIAOMI_SURYA)
 int fpsensor;
 #endif
 
